@@ -4,12 +4,11 @@
  */
 
 public class HashMap<K, V> {
-	K key;
-	V value;
-	private int capacity=16;
+	private int capacity;
 	private Node<K, V>[] table;
 	
 	public HashMap() {
+		this.capacity = 16;
 		table=new Node[capacity];
 	}
 	
